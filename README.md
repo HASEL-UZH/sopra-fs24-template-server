@@ -16,7 +16,7 @@ Download your IDE of choice: (e.g., [IntelliJ](https://www.jetbrains.com/idea/do
 
 ### VS Code
 The following extensions can help you get started more easily:
--   `pivotal.vscode-spring-boot`
+-   `vmware.vscode-spring-boot`
 -   `vscjava.vscode-spring-initializr`
 -   `vscjava.vscode-spring-boot-dashboard`
 -   `vscjava.vscode-java-pack`
