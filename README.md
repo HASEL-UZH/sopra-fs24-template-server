@@ -7,7 +7,7 @@
     -   Building REST services with Spring: https://spring.io/guides/tutorials/rest/
 
 ## Setup this Template with your IDE of choice
-Download your IDE of choice: (e.g., [IntelliJ](https://www.jetbrains.com/idea/download/)), [Visual Studio Code](https://code.visualstudio.com/), or [Eclipse](http://www.eclipse.org/downloads/). Make sure Java 17 is installed on your system (for Windows, please make sure your `JAVA_HOME` environment variable is set to the correct version of Java).
+Download your IDE of choice (e.g., [IntelliJ](https://www.jetbrains.com/idea/download/), [Visual Studio Code](https://code.visualstudio.com/), or [Eclipse](http://www.eclipse.org/downloads/)). Make sure Java 17 is installed on your system (for Windows, please make sure your `JAVA_HOME` environment variable is set to the correct version of Java).
 
 ### IntelliJ
 1. File -> Open... -> SoPra server template
@@ -43,6 +43,8 @@ More Information about [Gradle Wrapper](https://docs.gradle.org/current/userguid
 ./gradlew bootRun
 ```
 
+You can verify that the server is running by visiting `localhost:8080` in your browser.
+
 ### Test
 
 ```bash
@@ -51,7 +53,7 @@ More Information about [Gradle Wrapper](https://docs.gradle.org/current/userguid
 
 ### Development Mode
 You can start the backend in development mode, this will automatically trigger a new build and reload the application
-once the content of a file has been changed and you save the file.
+once the content of a file has been changed.
 
 Start two terminal windows and run:
 
