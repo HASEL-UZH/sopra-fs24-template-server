@@ -1,21 +1,25 @@
-name: Test Project
+name: Test Pull Request
 
 on:
   pull_request:
     branches:
       - main
+  
+  # run the workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repository code
-        uses: actions/checkout@v3
+      - name: Checkout repository code
+        uses: actions/checkout@v2
 
-      - name: Install Java JDK 17
-        uses: actions/setup-java@v2
+      - name: Install Java 17
+        uses: actions/setup-java@v3
         with:
-          java-version: 1.17
+           distribution: 'temurin'
+           java-version: '17'
 
       - name: Build with Gradle
         run: ./gradlew build
