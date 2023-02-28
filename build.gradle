@@ -3,7 +3,8 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
     id 'idea'
-    id "org.sonarqube" version "3.1.1"
+    id 'jacoco'
+    id "org.sonarqube" version "3.5.0.2730"
 }
 
 group 'ch.uzh.ifi.hasel'
@@ -50,6 +51,20 @@ dependencies {
 
 bootJar {
     archiveFileName = "${archiveBaseName.get()}.${archiveExtension.get()}"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "TODO"
+    property "sonar.organization", "TODO"
+    property "sonar.host.url", "TODO"
+  }
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+    }
 }
 
 test {
