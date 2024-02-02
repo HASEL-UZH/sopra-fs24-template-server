@@ -1,4 +1,4 @@
-package ch.uzh.ifi.hase.soprafs23.constant;
+package ch.uzh.ifi.hase.soprafs24.constant;
 
 public enum UserStatus {
   ONLINE, OFFLINE;
