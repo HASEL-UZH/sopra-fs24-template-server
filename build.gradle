@@ -28,7 +28,7 @@ repositories {
 }
 
 springBoot {
-    mainClass.set('ch.uzh.ifi.hase.soprafs23.Application')
+    mainClass.set('ch.uzh.ifi.hase.soprafs24.Application')
 }
 
 dependencies {
